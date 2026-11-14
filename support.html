@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — Trekonaut</title>
+  <meta name="description" content="Trekonaut support and FAQ: challenges, drops, verification, privacy, and how to reach us.">
+  <meta name="theme-color" content="#0b0b0c">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="canonical" href="https://erdtheturd.github.io/ghost-walk/support.html">
+  <meta property="og:title" content="Support — Trekonaut">
+  <meta property="og:description" content="FAQ and contact for Trekonaut.">
+  <meta property="og:image" content="https://erdtheturd.github.io/ghost-walk/assets/og.jpg">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap inner">
+      <a class="brand" href="./">
+        <img src="assets/icon-512.png" width="36" height="36" alt="">
+        <span class="brand-name">Trekonaut</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="./">Home</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="wrap">
+      <h1>Support</h1>
+      <p class="lede">Quick answers for Trekonaut. If you still need help, email us.</p>
+
+      <div class="faq">
+        <details open>
+          <summary>What is Trekonaut?</summary>
+          <p>An iPhone app for hiking challenges with friends, sponsored trail drops, summit keepers, and verified arrivals. You race to a pin, prove you got there, and keep score honestly.</p>
+        </details>
+        <details>
+          <summary>How does arrival verification work?</summary>
+          <p>You need to be inside the challenge or drop radius with good GPS accuracy, stay there for about twenty seconds, then take a summit snap in the app. Simulated or impossible locations are blocked outside debug builds.</p>
+        </details>
+        <details>
+          <summary>Do sponsored drops pay money inside the app?</summary>
+          <p>No. Claiming a drop creates a proof for the sponsor. Sponsors pay rewards outside Trekonaut — for example in-store or by their own process. There are no in-app purchases for drop payouts, no entry fees, and no wagers.</p>
+        </details>
+        <details>
+          <summary>Who can see my location and photos?</summary>
+          <p>Verification data stays on your device unless you share with friends you invite via CloudKit. Nothing is public by default. See the <a href="privacy.html">privacy policy</a> for detail.</p>
+        </details>
+        <details>
+          <summary>How do friend invites work?</summary>
+          <p>Invites use Apple’s CloudKit sharing. Only people you add to your circle can see shared content. You need to be signed into iCloud on your iPhone.</p>
+        </details>
+        <details>
+          <summary>Why doesn’t my arrival count?</summary>
+          <p>Common causes: GPS accuracy worse than about ±20&nbsp;m, standing outside the pin radius, leaving before the dwell timer finishes, or skipping the in-app summit snap. Try open sky and wait for a stable fix.</p>
+        </details>
+        <details>
+          <summary>When will Trekonaut be on the App Store?</summary>
+          <p>We’re preparing the listing. The download button on the home page is a placeholder until the store link is live.</p>
+        </details>
+        <details>
+          <summary>Is trekonaut.com live?</summary>
+          <p>Not yet. This GitHub Pages site is the temporary home. The domain trekonaut.com is planned for later.</p>
+        </details>
+      </div>
+
+      <div class="contact-box">
+        <h2>Email</h2>
+        <!-- TODO: support@trekonaut.com is not live yet (mailbox pending). -->
+        <p>
+          Write to
+          <a data-support-email href="mailto:support@trekonaut.com">support@trekonaut.com</a>.
+          We read every message; replies may be slower while the mailbox is being set up.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Trekonaut</div>
+          <p class="footer-meta">Hiking challenges for iPhone.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="./">Home</a>
+          <a href="privacy.html">Privacy</a>
+          <a data-support-email href="mailto:support@trekonaut.com">support@trekonaut.com</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">© <span id="y"></span> Trekonaut</div>
+    </div>
+  </footer>
+
+  <script src="assets/config.js"></script>
+  <script src="assets/app.js"></script>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>

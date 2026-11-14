@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy — Trekonaut</title>
+  <meta name="description" content="Trekonaut privacy policy: location and photos on-device for verification, CloudKit sharing only with friends you invite, no ads or sale of data.">
+  <meta name="theme-color" content="#0b0b0c">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="canonical" href="https://erdtheturd.github.io/ghost-walk/privacy.html">
+  <meta property="og:title" content="Privacy — Trekonaut">
+  <meta property="og:description" content="How Trekonaut handles location, photos, and friend sharing.">
+  <meta property="og:image" content="https://erdtheturd.github.io/ghost-walk/assets/og.jpg">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap inner">
+      <a class="brand" href="./">
+        <img src="assets/icon-512.png" width="36" height="36" alt="">
+        <span class="brand-name">Trekonaut</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="./">Home</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="wrap">
+      <h1>Privacy</h1>
+      <p class="lede">Last updated November 14, 2026. This policy describes how Trekonaut (iOS, bundle ID com.erd.ghostwalk) handles your information.</p>
+
+      <article class="prose">
+        <h2>Short version</h2>
+        <p>Location and summit photos are used on your device to verify arrivals. Friend sharing uses Apple CloudKit and only reaches people you invite. We don’t run ads, don’t use third-party tracking SDKs, and don’t sell your data.</p>
+
+        <h2>What Trekonaut does</h2>
+        <p>Trekonaut is a hiking and adventure app for iPhone. You can create summit challenges with friends, find sponsored drops, log peaks and summit keepers, and verify that you arrived at a place.</p>
+
+        <h2>Location</h2>
+        <p>When you grant location access (while using the app), Trekonaut uses your GPS position to:</p>
+        <ul>
+          <li>Show nearby challenges, drops, and peaks on the map</li>
+          <li>Check that you are inside a pin’s radius with acceptable accuracy</li>
+          <li>Require a short dwell time before an arrival counts</li>
+          <li>Reject clearly spoofed or impossible movement when those checks are on</li>
+        </ul>
+        <p>Location used for verification stays on your device unless you choose to share related challenge or claim data with friends you invite.</p>
+
+        <h2>Photos (summit snaps)</h2>
+        <p>Arrival claims can include a photo taken in-app (not imported from your library). That image is used to build a claim proof (including a photo hash). Photos for verification are processed on-device; they are not uploaded for advertising or analytics.</p>
+
+        <h2>Friend sharing (CloudKit)</h2>
+        <p>If you invite friends, Trekonaut uses Apple CloudKit sharing in a private circle you control. Share permissions are not public. Only people you invite can see shared circle content. Pins and local data remain on-device until you explicitly share.</p>
+        <p>Apple’s handling of iCloud / CloudKit data is covered by Apple’s privacy policy and your Apple ID settings.</p>
+
+        <h2>Sponsored drops and rewards</h2>
+        <p>Claiming a sponsored drop creates a claim proof for the sponsor. Sponsors pay rewards outside Trekonaut (for example in-store or by email). No money moves inside the app. We do not process payments for drop rewards.</p>
+
+        <h2>What we don’t do</h2>
+        <ul>
+          <li>No advertising networks</li>
+          <li>No third-party analytics or tracking SDKs for ads</li>
+          <li>No sale of personal data</li>
+          <li>No public feed of your location or photos</li>
+        </ul>
+
+        <h2>Device integrity</h2>
+        <p>Future builds may use Apple App Attest (or similar) to strengthen claim proofs. That attestation stays tied to verifying arrivals — not to advertising profiles.</p>
+
+        <h2>Children</h2>
+        <p>Trekonaut is not directed at children under 13. Do not use the app if you are under 13.</p>
+
+        <h2>Changes</h2>
+        <p>If this policy changes in a material way, we will update the date above and post the new version on this page.</p>
+
+        <h2>Contact</h2>
+        <p>
+          <!-- TODO: support@trekonaut.com is not live yet (mailbox pending). -->
+          Questions about privacy: <a data-support-email href="mailto:support@trekonaut.com">support@trekonaut.com</a>.
+          Future site: trekonaut.com.
+        </p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Trekonaut</div>
+          <p class="footer-meta">Hiking challenges for iPhone.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="./">Home</a>
+          <a href="support.html">Support</a>
+          <a data-support-email href="mailto:support@trekonaut.com">support@trekonaut.com</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">© <span id="y"></span> Trekonaut</div>
+    </div>
+  </footer>
+
+  <script src="assets/config.js"></script>
+  <script src="assets/app.js"></script>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
