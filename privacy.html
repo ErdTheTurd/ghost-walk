@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy · Trekonaut</title>
   <meta name="description" content="Trekonaut keeps location and photos on your phone for check-ins. Sharing uses iCloud with friends you invite. No ads. No data sold.">
-  <meta name="theme-color" content="#F3EFE6">
+  <meta name="theme-color" content="#1A3A2C">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="canonical" href="https://erdtheturd.github.io/ghost-walk/privacy.html">
@@ -14,11 +14,11 @@
   <meta property="og:image" content="https://erdtheturd.github.io/ghost-walk/assets/og.jpg">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
-<body>
+<body class="inner-page">
   <header class="site-header">
     <div class="wrap inner">
       <a class="brand" href="./">
-        <img src="assets/icon-512.png" width="28" height="28" alt="">
+        <img src="assets/icon-512.png" width="32" height="32" alt="">
         <span class="brand-name">Trekonaut</span>
       </a>
       <nav class="nav" aria-label="Primary">
@@ -28,9 +28,21 @@
     </div>
   </header>
 
-  <main class="page">
+  <div class="page-hero">
+    <div class="page-hero-photo" aria-hidden="true">
+      <picture>
+        <source type="image/webp" srcset="assets/photos/peak.webp">
+        <img src="assets/photos/peak.jpg" width="1600" height="818" alt="">
+      </picture>
+    </div>
+    <div class="page-hero-shade" aria-hidden="true"></div>
     <div class="wrap">
       <h1>Privacy</h1>
+    </div>
+  </div>
+
+  <main class="page">
+    <div class="wrap">
       <p class="lede">Updated November 14, 2026. Short and plain.</p>
 
       <article class="prose">
@@ -56,16 +68,24 @@
   </main>
 
   <footer class="site-footer">
-    <div class="wrap footer-line">
-      <span>Trekonaut</span>
-      <span class="footer-sep" aria-hidden="true">·</span>
-      <a href="privacy.html">Privacy</a>
-      <span class="footer-sep" aria-hidden="true">·</span>
-      <a href="support.html">Support</a>
-      <span class="footer-sep" aria-hidden="true">·</span>
-      <a data-support-email href="mailto:support@trekonaut.com">support@trekonaut.com</a>
-      <span class="footer-sep" aria-hidden="true">·</span>
-      <span>© 2026 Edward Dunn.</span>
+    <div class="wrap">
+      <div class="footer-line">
+        <span>Trekonaut</span>
+        <span class="footer-sep" aria-hidden="true">·</span>
+        <a href="privacy.html">Privacy</a>
+        <span class="footer-sep" aria-hidden="true">·</span>
+        <a href="support.html">Support</a>
+        <span class="footer-sep" aria-hidden="true">·</span>
+        <a data-support-email href="mailto:support@trekonaut.com">support@trekonaut.com</a>
+        <span class="footer-sep" aria-hidden="true">·</span>
+        <span>© 2026 Edward Dunn.</span>
+      </div>
+      <p class="photo-credits">
+        Photos (hosted locally): Hiking to the Top by Iswanto Arif (Unsplash / CC0);
+        Hikers on a steep slope by Will Langenberg (Unsplash / CC0);
+        Sweeney Ridge Trail by Nina Rumbines (Unsplash / CC0);
+        Condor Peak by The Fun Chronicles (CC0). Via Wikimedia Commons.
+      </p>
     </div>
   </footer>
 
